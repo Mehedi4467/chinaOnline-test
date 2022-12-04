@@ -1,0 +1,83 @@
+.account {
+  &__table-wrapper {
+    background-color: #fff;
+  }
+  &__table {
+    border-radius: rem(6px);
+  }
+  &__table-heading {
+    font-size: rem(16px);
+    font-weight: 500;
+    color: #002c36;
+    max-height: rem(45px);
+    overflow: hidden;
+  }
+  &__table-image-wrapper {
+    max-width: rem(65px);
+    height: rem(65px);
+    padding: rem(5px);
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: rem(6px);
+    margin: 0 auto;
+  }
+  &__table-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: rem(4px);
+  }
+  &__table {
+    &:not(:first-child) {
+      border-top: 15px solid #dcdceabc;
+    }
+    th {
+      width: 15%;
+    }
+  }
+  &__table-id {
+    max-width: 100px;
+  }
+  &__table-image-main {
+    width: rem(100px);
+  }
+  &__table-heading-wrapper,
+  &__table-total-price {
+    width: 15%;
+  }
+  &__table-status {
+    width: rem(150px);
+  }
+  &__table-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(5px);
+  }
+  &__table-action-wrappper {
+    padding: rem(5px);
+    height: rem(30px);
+    min-width: rem(30px);
+    display: grid;
+    place-items: center;
+    background-color: #d72a4e;
+    border-radius: rem(4px);
+    cursor: pointer;
+  }
+  &__table-text {
+    color: #fff;
+  }
+  &__table-icon {
+    max-width: rem(25px);
+    color: #fff;
+  }
+}
+.setting {
+  &__form-button {
+    display: table;
+    width: max-content;
+    padding: rem(8px) rem(20px);
+  }
+  &__form-row {
+    margin-bottom: rem(15px);
+  }
+}

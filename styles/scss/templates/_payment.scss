@@ -1,0 +1,90 @@
+.payment {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  &__wrapper {
+    max-width: rem(600px);
+    background-color: #fff;
+    padding: rem(25px);
+    border-radius: rem(4px);
+  }
+  &__heading {
+    font-size: rem(18px);
+    font-weight: 500;
+    color: #002c36;
+  }
+  &__card-wrapper {
+    margin: rem(15px) 0 rem(25px);
+    @include mq(801px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(15px);
+    }
+  }
+  &__card {
+    background-color: #dcdcea;
+    padding: rem(8px);
+    border-radius: rem(4px);
+    display: flex;
+    gap: rem(8px);
+    &:not(:last-child) {
+      margin-bottom: rem(8px);
+      @include mq(801px) {
+        margin-bottom: 0;
+      }
+    }
+    &:last-child {
+      grid-column: span 2;
+    }
+  }
+  &__types {
+    font-size: rem(15px);
+    font-weight: 500;
+    color: #002c36;
+  }
+  &__card-select {
+    cursor: pointer;
+  }
+  &__gateway-charge {
+    font-size: rem(15px);
+    font-weight: 500;
+    margin: rem(10px) 0 rem(15px);
+    color: #002c36;
+  }
+  &__charge-type {
+    color: #fff;
+    background-color: #002c36;
+    padding: rem(3px) rem(4px);
+    border-radius: rem(4px);
+  }
+  &__image-wrapper {
+    width: 100%;
+  }
+  &__image {
+    display: block;
+    width: 100%;
+  }
+  &__charge {
+    font-size: rem(14px);
+    font-weight: 500;
+    color: #002c36;
+  }
+  &__total-cost {
+    font-size: rem(16px);
+    font-weight: 500;
+    margin: rem(15px) 0 rem(20px);
+    color: #002c36;
+  }
+  &__button {
+    font-size: rem(16px);
+    font-weight: 500;
+    width: 100%;
+    padding: rem(10px) 0;
+    border-radius: rem(6px);
+    cursor: pointer;
+    color: #fff;
+    background-color: #d72a4e;
+    border: 1px solid #eee;
+  }
+}

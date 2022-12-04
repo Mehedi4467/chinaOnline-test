@@ -1,0 +1,30 @@
+.cart-header {
+  padding: rem(15px);
+  background-color: #fff;
+  border-radius: rem(4px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: rem(15px) 0;
+  @include mq(801px) {
+    margin: 0 0 rem(15px);
+  }
+  &__title {
+    font-size: rem(18px);
+    color: #002c36;
+    text-transform: uppercase;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: rem(8px);
+  }
+  &__time {
+    font-size: rem(16px);
+    color: #002c36;
+  }
+  &__icon {
+    width: rem(22px);
+    height: rem(22px);
+  }
+}

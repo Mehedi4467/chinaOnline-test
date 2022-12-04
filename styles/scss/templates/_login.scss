@@ -1,0 +1,138 @@
+.login {
+  @include mq(801px) {
+    display: grid;
+    place-items: center;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  &__wrapper {
+    background-color: #fff;
+    padding: rem(15px);
+    border-radius: rem(6px);
+    width: 100%;
+    @include mq(medium) {
+      width: rem(470px);
+    }
+  }
+  &__image-wrapper {
+    position: relative;
+    padding-top: 85.25%;
+    @include mq(medium) {
+      margin: 0 auto;
+      padding-top: 55.25%;
+      height: 0;
+    }
+    @include mq(extra-large) {
+      padding-top: 65.25%;
+    }
+    @include mq(double-extra-large) {
+      padding-top: 75.25%;
+    }
+  }
+  &__image {
+    max-width: calc(100% - 80px);
+    max-height: 100%;
+    display: table;
+    margin: 0 auto;
+    @include mq(medium) {
+      position: absolute;
+      inset: 0;
+      object-fit: contain;
+    }
+  }
+  &__form {
+    max-width: calc(100% - 90px);
+    margin: rem(25px) auto 0;
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+  &__input {
+    -moz-appearance: textfield;
+    font-size: rem(16px);
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4;
+    width: 100%;
+    padding: rem(6px) rem(12px);
+    border: 1px solid #d72a4e;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__otp-wrapper {
+    display: flex;
+    align-items: center;
+    gap: rem(6px);
+    width: calc(100% - 90px);
+    margin: 0 auto;
+  }
+  &__otp {
+    height: rem(35px) !important;
+    -moz-appearance: textfield;
+    font-size: rem(16px);
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4;
+    width: 100%;
+    padding: rem(6px) rem(12px);
+    border: 1px solid #002c36;
+    &--active {
+      border: 1px solid #d72a4e;
+    }
+  }
+  &__button-content {
+    margin: rem(25px) auto rem(10px);
+    width: calc(100% - 20px);
+  }
+  &__button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(10px);
+    margin-top: rem(15px);
+  }
+  &__button {
+    display: table;
+    cursor: pointer;
+    font-size: rem(16px);
+    font-weight: 500;
+    width: 100%;
+    padding: rem(10px) 0;
+    border-radius: rem(6px);
+    color: #fff;
+    background-color: #d72a4e;
+    border: none;
+    &--first {
+      margin: rem(20px) auto rem(10px);
+      // background-color: transparent;
+    }
+  }
+  &__resent {
+    display: table;
+    cursor: pointer;
+    font-size: rem(14px);
+    font-weight: 500;
+    padding: rem(8px) rem(30px);
+    color: #fff;
+    background-color: #d72a4e;
+    border-radius: rem(5px);
+    border: none;
+  }
+  &__icon {
+    width: rem(40px);
+    height: rem(40px);
+    padding: rem(5px);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: #d72a4e;
+    border-radius: 50%;
+    path {
+      stroke: #fff;
+    }
+  }
+}

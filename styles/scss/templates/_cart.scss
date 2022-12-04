@@ -1,0 +1,26 @@
+.cart {
+  &__orders-title {
+    background-color: #d72a4e;
+    padding: rem(15px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: rem(4px);
+    border-top-right-radius: rem(4px);
+  }
+  &__orders-heading {
+    font-size: rem(16px);
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &__remove-button {
+    font-size: rem(14px);
+    text-transform: capitalize;
+    color: #002c36;
+    background-color: #fff;
+    border: none;
+    border-radius: rem(4px);
+    padding: rem(7px) rem(12px);
+    cursor: pointer;
+  }
+}

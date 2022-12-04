@@ -1,0 +1,81 @@
+// Color Variables
+$primary_text: #ccd6f6;
+$secondary_text: #8892b0;
+$primary_text_white: #ffffff;
+$primary_text_dark: #0a192f;
+$primary_text_black: #000000;
+$primary_text_light: #8ab3cf;
+$primary_text_green: #64ffda;
+
+// Background color
+$primary_background: #ffffff;
+$secondary_background: #0a192f;
+$primary_background_green: #64ffda;
+$secondary_background-green: #112240;
+$secondary_background_light: #233554;
+
+// Icon color
+$primary_icon: #ffffff;
+$secondary_icon: #182642;
+$primary_icon_green: #64ffda;
+$secondary_icon_light: #8ab3cf;
+
+// Others color
+$link_color: #2446c0;
+$button_border: #182642;
+$border_color: #64ffda;
+$button_border_secondary: #48505a;
+$shadow_color: #afafaf;
+
+$h1: 48px;
+$h1-md: 38px;
+$h2: 38px;
+$h2-md: 30px;
+$h3: 22px;
+$h3-md: 20px;
+$h4: 18px;
+$h5: 16px;
+$h6: 15px;
+
+// Font-Weight Variables
+$medium: 500;
+$semi_bold: 600;
+$bold: 700;
+$black: 900;
+
+// Font Variables
+$primary-font: 'Inter', sans-serif;
+
+/// @type Length
+$max-width: 1920px !default;
+
+/// @prop {String} keys
+/// @prop {Map} values
+$breakpoints: (
+  'extra-small': 320px,
+  'small': 640px,
+  'medium': 768px,
+  'medium-small': 980px,
+  'large': 1024px,
+  'medium-large': 1080px,
+  'extra-large': 1281px,
+  'double-extra-large': 1536px,
+  'tripple-extra-large': 1920px,
+) !default;
+// 1. Configuration and helpers
+@import 'modules/fonts', 'modules/helpers', 'modules/typography';
+
+// 2. Components
+@import 'components/header', 'components/footer', 'components/loader',
+  'components/search', 'components/hero', 'components/alart', 'components/story',
+  'components/mobile-nav', 'components/side-bar', 'components/popup',
+  'components/top-category', 'components/card', 'components/hot-deals',
+  'components/cart-header', 'components/dropdown', 'components/pagination',
+  'components/announcement', 'components/table', 'components/form',
+  'components/specification';
+// 3. templates
+@import 'templates/home', 'templates/products', 'templates/product-single',
+  'templates/login', 'templates/error-page', 'templates/checkout',
+  'templates/cart', 'templates/payment', 'templates/wishlist',
+  'templates/dashboard', 'templates/about-us', 'templates/contact-us',
+  'templates/policy';
