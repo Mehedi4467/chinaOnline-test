@@ -1,42 +1,39 @@
 {
-  "name": "site",
+  "name": "test",
   "version": "0.1.0",
-  "homepage": "https://chinaonlinebd.com/",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next export",
-    "analyze": "ANALYZE=true next build",
-    "analyze:server": "BUNDLE_ANALYZE=server next build",
-    "analyze:browser": "BUNDLE_ANALYZE=browser next build"
-  },
-  "engines": {
-    "node": "^16.x",
-    "npm": "~8.12"
-  },
   "dependencies": {
-    "axios": "^0.27.2",
-    "iron-session": "^6.3.1",
-    "next": "^13.0.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-facebook-pixel": "^1.0.4",
     "react-messenger-customer-chat": "^0.8.0",
-    "react-player": "^2.10.1",
-    "react-query": "^3.39.2",
-    "sharp": "^0.31.2",
-    "swiper": "^8.2.4",
-    "zustand": "^4.1.4"
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "@babel/core": "^7.18.9",
-    "@babel/preset-env": "^7.18.9",
-    "@next/bundle-analyzer": "^12.3.1",
-    "eslint": "8.17.0",
-    "eslint-config-next": "12.1.6",
-    "sass": "^1.54.4"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
