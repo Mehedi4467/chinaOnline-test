@@ -4,9 +4,9 @@ function App() {
     <div>
       <p>Hello Messanger</p>
     <MessengerCustomerChat
-    pageId="<PAGE_ID>"
-    appId="<APP_ID>"
-    htmlRef="<REF_STRING>"
+    pageId="109012968398097"
+    appId="1485882018564385"
+    // htmlRef="<REF_STRING>"
   />
     </div>
   );
